@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin-top: 15vh;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#footer ul {
+    list-style: none;
+}
+
+#footer > #icone ul{
+    width: 20vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#footer > div:not(#icone) > ul{
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}

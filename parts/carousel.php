@@ -23,7 +23,7 @@
                 <div id="cont">
                     <img src="./img/<?php echo $imgLink ?>" class="img" alt="<?php echo $imgLink ?>">
                     <div class="description">
-                        <h1><?php echo $titre ?></h1>
+                        <h1 class="titre"><?php echo $titre ?></h1>
                         <?php if(isset($data[$titre])) {?>
                             <div class="syn"> <?php echo $data[$titre]["synopsis"] ?> </div>
                             <div class="genre"><?php echo $data[$titre]["genre"] ?></div>
