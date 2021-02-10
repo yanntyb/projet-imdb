@@ -9,6 +9,7 @@ html {
 }
 
 body > h1{
-    margin-top: 10vh;
+
     color: yellow;
+    margin: 10vh 0 0 !important;
 }
