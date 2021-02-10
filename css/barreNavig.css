@@ -28,7 +28,7 @@ a{
     list-style-type: none;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     box-shadow: 0px 2px 8px 3px #FAD7A0;
 }
 
@@ -59,12 +59,16 @@ input:focus {
 }
 
 #choice{
-    font-size: 1rem;
-    width: 3rem;
+    font-size: 1.2rem;
+    width: 10%;
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+    text-align: center;
 }
 
 input{
     width: 45vw;
+    padding: 1%;
 }
 
 #separation{
@@ -78,6 +82,28 @@ input{
     padding-right: 10%;
 }
 
-.hoverColor:hover{
+.hoverColor:hover , #showAllButton > li > a:hover{
     color: darkorange;
+}
+
+#showAllButton{
+    position: absolute;
+    left:19vw;
+    background-color: #ABB2B9;
+    list-style-type: none;
+    font-size: 2rem;
+    display: none;
+    color: black;
+    z-index: 10;
+}
+
+#showAllButton > li{
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+#separation2{
+    width: 80%;
+    height: 1px;
+    border: 1px solid gray;
 }
