@@ -99,5 +99,5 @@ input{
 }
 
 .spanNotReset{
-    color: black;
+    color: black !important;
 }
