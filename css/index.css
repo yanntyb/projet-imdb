@@ -9,7 +9,7 @@ html {
 }
 
 body > h1{
-
     color: yellow;
-    margin: 10vh 0 0 !important;
+    margin: 10vh;
+    font-size: 3rem;
 }
