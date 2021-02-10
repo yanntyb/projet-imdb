@@ -10,6 +10,41 @@ html {
 
 body > h1{
     color: yellow;
-    margin: 10vh;
+    margin-top: 10vh;
+    margin-left: 10vh;
     font-size: 3rem;
+}
+
+#recommendation{
+    margin-left: 11vh;
+    color: dodgerblue;
+}
+
+#resetH1{
+    margin-top: 10vh;
+    margin-left: 10vh;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+#resetH1 > div{
+    height: 3rem;
+    width: 1px;
+    border: 1px solid yellow;
+    border-radius: 10%;
+}
+
+#resetH1 > h1 {
+    margin-left: 1vw;
+}
+
+#resetH1 > a {
+    margin-top: -0.5%;
+    margin-left: 1%;
+}
+
+#resetH1 > a:hover{
+    color:  yellow;
 }
