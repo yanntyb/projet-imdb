@@ -86,10 +86,10 @@
         <div id="separationJaune"></div>
         <h1>Born today</h1>
         <a href="#"><i class="fas fa-chevron-right"></i></a>
-        <div id="randomProfil"></div>
+
     </div>
     <span>People born on <?php echo date('l jS \of F') ?></span>
-
+    <div id="randomProfil"></div>
     <div id="resetH1">
         <div id="separationJaune"></div>
         <h1>Top news</h1>

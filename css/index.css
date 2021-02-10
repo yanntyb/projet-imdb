@@ -56,8 +56,36 @@ body > h1{
     font-size: 3rem;
 }
 
-span{
+span:not(.profileName){
     font-size: 1.5rem;
     margin-left: 15vh;
     color: white;
+}
+
+#randomProfil{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 15vh;
+    margin-top: 5vh;
+}
+
+#randomProfil img{
+    border-radius: 50%;
+    margin-left: 2vw;
+    width: 5vw;
+    height: 5vw;
+}
+
+#randomProfil span{
+    color: white;
+    position: relative;
+    top: 10%;
+    margin-left: 2vw;
+    vertical-align: bottom;
+}
+
+.profileDiv{
+    display: flex;
+    flex-direction: column;
 }
