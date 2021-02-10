@@ -11,18 +11,18 @@ html {
 body > h1{
     color: yellow;
     margin-top: 10vh;
-    margin-left: 10vh;
+    margin-left: 15vh;
     font-size: 3rem;
 }
 
 #recommendation{
-    margin-left: 11vh;
+    margin-left: 15vh;
     color: dodgerblue;
 }
 
 #resetH1{
     margin-top: 10vh;
-    margin-left: 10vh;
+    margin-left: 15vh;
     font-size: 3rem;
     color: white;
     display: flex;
@@ -47,4 +47,17 @@ body > h1{
 
 #resetH1 > a:hover{
     color:  yellow;
+}
+
+#recently{
+    color: white;
+    margin-top: 10vh;
+    margin-left: 15vh;
+    font-size: 3rem;
+}
+
+span{
+    font-size: 1.5rem;
+    margin-left: 15vh;
+    color: white;
 }

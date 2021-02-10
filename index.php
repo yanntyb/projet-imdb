@@ -35,11 +35,13 @@
         <h1>Fan favorites</h1>
         <a href="#"><i class="fas fa-chevron-right"></i></a>
     </div>
+    <span>This week's top TV and movies</span>
 
     <div id="resetH1">
         <div id="separationJaune"></div>
         <h1>More to watch</h1>
     </div>
+    <span>IMDb helps you select the perfect next show or movie to watch.</span>
 
     <h1>Exclusive videos</h1>
 
@@ -47,6 +49,7 @@
         <div id="separationJaune"></div>
         <h1>IMDb Originals</h1>
     </div>
+    <span>Celebrity interviews, trending entertainment stories, and expert analysis</span>
 
     <h1>Explore what’s streaming</h1>
 
@@ -57,17 +60,20 @@
         <h1>Top box office (US)</h1>
         <a href="#"><i class="fas fa-chevron-right"></i></a>
     </div>
+    <span>Weekend of February 5-7</span>
 
     <div id="resetH1">
         <div id="separationJaune"></div>
         <h1>Coming soon to theaters</h1>
         <a href="#"><i class="fas fa-chevron-right"></i></a>
     </div>
+    <span>Trailers for upcoming releases</span>
 
     <div id="resetH1">
         <div id="separationJaune"></div>
         <h1>Watch soon at home</h1>
     </div>
+    <span>Add to watchlist for notifications</span>
 
     <h1>More to explore</h1>
 
@@ -80,7 +86,9 @@
         <div id="separationJaune"></div>
         <h1>Born today</h1>
         <a href="#"><i class="fas fa-chevron-right"></i></a>
+        <div id="randomProfil"></div>
     </div>
+    <span>People born on <?php echo date('l jS \of F') ?></span>
 
     <div id="resetH1">
         <div id="separationJaune"></div>
@@ -88,11 +96,14 @@
         <a href="#"><i class="fas fa-chevron-right"></i></a>
     </div>
 
-    <div>
-        <h2>Recently viewed</h2>
+    <div id="recently">
+        <h1>Recently viewed</h1>
         <span>You have no recently viewed pages</span>
     </div>
+
+
     <?php include "./parts/footer.php" ?>
+    <script src="./js/randomProfil.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
