@@ -1,5 +1,5 @@
 <?php
-    $data = json_decode(file_get_contents("./json/film.json"));
+    $data = json_decode(file_get_contents("./json/film.json"),true);
 ?>
 
 <link rel="stylesheet" href="./css/carrousel.css">
@@ -21,7 +21,19 @@
             $index++;
             ?>
                 <div id="cont">
-                    <img src="./img/<?php echo $imgLink ?>" class="d-block img" alt="<?php echo $imgLink ?>">
+                    <img src="./img/<?php echo $imgLink ?>" class="img" alt="<?php echo $imgLink ?>">
+                    <div class="description">
+                        <h1><?php echo $titre ?></h1>
+                        <?php if(isset($data[$titre])) {?>
+                            <div class="syn"> <?php echo $data[$titre]["synopsis"] ?> </div>
+                            <div class="genre"><?php echo $data[$titre]["genre"] ?></div>
+                        <?php
+                        }
+                        else{
+                            echo "Pas de description disponible";
+                        }
+                        ?>
+                    </div>
                 </div>
             </div>
         <?php
