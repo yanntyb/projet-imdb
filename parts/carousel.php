@@ -17,6 +17,7 @@
             else{
                 echo '<div class="carousel-item">';
             }
+            $titre = str_split($imgLink,strpos($imgLink,"."))[0];
             $index++;
             ?>
                 <div id="cont">
