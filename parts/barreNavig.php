@@ -10,7 +10,7 @@
     <li>
         <div id="selection">
             <div id="choice">
-                <span>
+                <span class="spanNotReset">
                     ALL
                     <i class="fas fa-sort-down"></i>
                 </span>

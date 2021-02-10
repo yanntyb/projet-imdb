@@ -97,3 +97,7 @@ input{
     height: 1px;
     border: 1px solid gray;
 }
+
+.spanNotReset{
+    color: black;
+}
