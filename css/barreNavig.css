@@ -19,7 +19,7 @@ a{
     justify-content: space-evenly;
     align-items: center;
     font-size: 1.5rem;
-    box-shadow: 0px 2px 8px 3px #FAD7A0;
+    /*box-shadow: 0px 2px 8px 3px #FAD7A0;*/
 }
 
 #firstButton{
