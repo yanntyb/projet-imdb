@@ -8,15 +8,16 @@ html {
     font-size: 62.5%;
 }
 
-#carouselFavori1, #carouselFavori2{
+#carouselFavori1, #carouselFavori2 , #carousel3{
     width:60vw;
     height: 42vh;
     margin-left: 15vh;
     margin-top: 2vh;
+    text-align: center;
 }
 
 
-.carousel-item .cont{
+#carouselFavori1 .carousel-item .cont, #carouselFavori2 .carousel-item .cont{
     width: 10vw;
     height: 40vh;
     display: inline-block;
@@ -41,6 +42,7 @@ html {
 
 #carouselFavori1 #descript, #carouselFavori2 #descript{
     margin-left: 1vw;
+    margin-top: 0.5vw;
 }
 
 #carouselFavori1 .carousel-control-next-icon, #carouselFavori2 .carousel-control-next-icon{
@@ -60,4 +62,38 @@ html {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+#carousel3 .carousel-item .cont{
+    width: 22vw;
+    display: inline-block;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+#carousel3{
+    width: 85vw;
+}
+
+#carousel3 img{
+    width: 22vw;
+    height: 38vh;
+}
+
+#carousel3 .time {
+    position: absolute;
+    bottom: 7vh;
+    color: white;
+    margin-left: 2vw;
+    font-size: 2rem;
+}
+
+#carousel3 i {
+    margin-right: 1vw;
+}
+
+#carousel3 #descript{
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 1vh;
 }

@@ -16,6 +16,7 @@ body > h1{
 }
 
 #recommendation{
+    margin-top: 5vh;
     margin-left: 15vh;
     color: dodgerblue;
 }
@@ -107,4 +108,17 @@ body > span:not(.profileName){
 #signIn button{
     margin-top: 4vh;
     font-size: 1.5rem;
+}
+
+#buttonMoreToWatch{
+    margin-left: 15vh;
+    margin-top: 5vh;
+}
+
+#buttonMoreToWatch button{
+    width: 20vw;
+    margin-right: 3vh;
+    height: 5vh;
+    border: 1px solid white;
+    background-color: black;
 }
