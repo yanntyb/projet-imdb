@@ -8,6 +8,7 @@
     <title>Document</title>
     <?php include "./cssLink.php" ?>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/carouselFavori.css">
     <?php include "./parts/headerScript.php" ?>
 </head>
 <body>
@@ -21,13 +22,23 @@
 
 <!--Deuxieme caroussel-->
 
+
+
     <h1>What to watch</h1>
     <a id="recommendation" href="#">Get more recommendations</a>
+
 
     <div id="resetH1">
         <div id="separationJaune"></div>
         <h1>From your Watchlist</h1>
         <a href="#"><i class="fas fa-chevron-right"></i></a>
+    </div>
+
+    <div id="signIn">
+        <i class="fas fa-user-plus"></i>
+        <span>Sign in to access your Watchlist</span>
+        <span>Save shows and movies to keep track of what you want to watch.</span>
+        <button type="button" class="btn btn-warning">Sign in to IMDb</button>
     </div>
 
     <div id="resetH1">
@@ -36,6 +47,81 @@
         <a href="#"><i class="fas fa-chevron-right"></i></a>
     </div>
     <span>This week's top TV and movies</span>
+
+
+
+
+<?php
+$data = json_decode(file_get_contents("./json/film.json"),true);
+?>
+
+<link rel="stylesheet" href="./css/carrousel.css">
+
+<div id="carouselFavori" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <?php
+        $file = scandir("./img");
+        $file = array_diff($file, array('..', '.'));
+        $index = 0;
+        for($i=0;$i<count($file);$i+=10){
+            if($index === 0){
+                echo '<div class="carousel-item active">';
+                $index++;
+            }
+            else{
+                echo '<div class="carousel-item">';
+            }
+            for($j=0;$j<=10;$j++){?>
+                <div id="cont">
+                    <p>ko</p>
+                </div><?php
+            }
+
+        //$titre = str_split($imgLink,strpos($imgLink,"."))[0];
+
+        ?>
+
+    </div>
+    <?php
+    }
+    ?>
+
+</div>
+<a class="carousel-control-prev" href="#carouselFavori" role="button" data-bs-slide="prev">
+    <span class="icon carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselFavori" role="button" data-bs-slide="next">
+    <span class="icone carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div id="resetH1">
         <div id="separationJaune"></div>

@@ -89,3 +89,22 @@ body > span:not(.profileName){
     display: flex;
     flex-direction: column;
 }
+
+#signIn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+    font-size: 1.7rem;
+    color: white;
+}
+
+#signIn i {
+    margin-bottom: 2vh;
+}
+
+#signIn button{
+    margin-top: 4vh;
+    font-size: 1.5rem;
+}

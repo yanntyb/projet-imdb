@@ -7,7 +7,7 @@
 <div id="carouselFilm" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
     <?php
-        $file = scandir("./img");
+        $file = scandir("./img/imgCover");
         $file = array_diff($file, array('..', '.'));
         $index = 0;
         foreach ($file as $imgLink){
@@ -21,7 +21,7 @@
             $index++;
             ?>
                 <div id="cont">
-                    <img src="./img/<?php echo $imgLink ?>" class="img" alt="<?php echo $imgLink ?>">
+                    <img src="./img/imgCover/<?php echo $imgLink ?>" class="img" alt="<?php echo $imgLink ?>">
                     <div class="description">
                         <h1 class="titre"><?php echo $titre ?></h1>
                         <?php if(isset($data[$titre])) {?>

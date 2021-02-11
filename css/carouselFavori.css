@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+#carouselFavori{
+    width:50vw;
+    margin-left: 15vh;
+    margin-top: 2vh;
+}
