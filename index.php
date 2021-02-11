@@ -13,115 +13,133 @@
 </head>
 <body>
 <!--Nav barre-->
-    <?php include "./parts/barreNavig.php" ?>
+<?php include "./parts/barreNavig.php" ?>
 
 <!--Carousel-->
-    <?php include "./parts/carousel.php" ?>
+<?php include "./parts/carousel.php" ?>
 
-    <h1>Featured Today</h1>
+<h1>Featured Today</h1>
 
-<!--Deuxieme caroussel-->
+<h1>What to watch</h1>
+<a id="recommendation" href="#">Get more recommendations</a>
 
+<div id="resetH1">
+    <div id="separationJaune"></div>
+    <h1>Top picks</h1>
+    <a href="#"><i class="fas fa-chevron-right"></i></a>
+</div>
+<span>TV shows and movies just for you</span>
+<a id="recommendation" href="#">Sign in</a>
 
+<div class="center">
+    <div id="carouselFavori1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <?php
+            $file = scandir("./img/imgFavori");
+            $file = array_diff($file, array('..', '.'));
+            $index = 0;
+            for ($i = 0;$i <=12;$i += 3){
+            if ($index === 0){ ?>
+            <div class="carousel-item active"> <?php
+                }
+                else{ ?>
+                <div class="carousel-item"> <?php
+                    }
 
-    <h1>What to watch</h1>
-    <a id="recommendation" href="#">Get more recommendations</a>
+                    for ($j = 0; $j <= 3; $j++) { ?>
+                        <div class="cont">
+                            <img src="https://m.media-amazon.com/images/M/MV5BM2EwMmRhMmUtMzBmMS00ZDQ3LTg4OGEtNjlkODk3ZTMxMmJlXkEyXkFqcGdeQXVyMjM5ODk1NDU@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="">
+                            <div id="descript">
+                                <span class="etoile"><i class="fas fa-star"></i><span class="note"><?php echo random_int(0,9) + (random_int(0,9)/10) ?></span></span>
+                                <br>
+                                <span class="titre">Le jeu de la dame</span>
+                                <button type="button" class="btn btn-info addWatchList">+ WatchList</button>
+                            </div>
+                        </div> <?php
+                    }
+                    $index++; ?>
+                </div> <?php
+                } ?>
 
-
-    <div id="resetH1">
-        <div id="separationJaune"></div>
-        <h1>From your Watchlist</h1>
-        <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div>
+            <a class="carousel-control-prev" href="#carouselFavori1" role="button" data-bs-slide="prev">
+                <span class="icon carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselFavori1" role="button" data-bs-slide="next">
+                <span class="icone carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
     </div>
 
-    <div id="signIn">
-        <i class="fas fa-user-plus"></i>
-        <span>Sign in to access your Watchlist</span>
-        <span>Save shows and movies to keep track of what you want to watch.</span>
-        <button type="button" class="btn btn-warning">Sign in to IMDb</button>
-    </div>
 
-    <div id="resetH1">
-        <div id="separationJaune"></div>
-        <h1>Fan favorites</h1>
-        <a href="#"><i class="fas fa-chevron-right"></i></a>
-    </div>
-    <span>This week's top TV and movies</span>
+<div id="resetH1">
+    <div id="separationJaune"></div>
+    <h1>From your Watchlist</h1>
+    <a href="#"><i class="fas fa-chevron-right"></i></a>
+</div>
 
+<div id="signIn">
+    <i class="fas fa-user-plus"></i>
+    <span>Sign in to access your Watchlist</span>
+    <span>Save shows and movies to keep track of what you want to watch.</span>
+    <button type="button" class="btn btn-warning">Sign in to IMDb</button>
+</div>
 
+<div id="resetH1">
+    <div id="separationJaune"></div>
+    <h1>Fan favorites</h1>
+    <a href="#"><i class="fas fa-chevron-right"></i></a>
+</div>
+<span>This week's top TV and movies</span>
 
 
 <?php
-$data = json_decode(file_get_contents("./json/film.json"),true);
+$data = json_decode(file_get_contents("./json/film.json"), true);
 ?>
 
-<link rel="stylesheet" href="./css/carrousel.css">
+<div class="center">
+    <div id="carouselFavori2" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <?php
+            $file = scandir("./img/imgFavori");
+            $file = array_diff($file, array('..', '.'));
+            $index = 0;
+            for ($i = 0;$i <=12;$i += 3){
+            if ($index === 0){ ?>
+            <div class="carousel-item active"> <?php
+                }
+                else{ ?>
+                <div class="carousel-item"> <?php
+                    }
 
-<div id="carouselFavori" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <?php
-        $file = scandir("./img");
-        $file = array_diff($file, array('..', '.'));
-        $index = 0;
-        for($i=0;$i<count($file);$i+=10){
-            if($index === 0){
-                echo '<div class="carousel-item active">';
-                $index++;
-            }
-            else{
-                echo '<div class="carousel-item">';
-            }
-            for($j=0;$j<=10;$j++){?>
-                <div id="cont">
-                    <p>ko</p>
-                </div><?php
-            }
+                    for ($j = 0; $j <= 3; $j++) { ?>
+                        <div class="cont">
+                            <img src="https://m.media-amazon.com/images/M/MV5BM2EwMmRhMmUtMzBmMS00ZDQ3LTg4OGEtNjlkODk3ZTMxMmJlXkEyXkFqcGdeQXVyMjM5ODk1NDU@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="">
+                            <div id="descript">
+                                <span class="etoile"><i class="fas fa-star"></i><span class="note"><?php echo random_int(0,9) + (random_int(0,9)/10) ?></span></span>
+                                <br>
+                                <span class="titre">Le jeu de la dame</span>
+                                <button type="button" class="btn btn-info addWatchList">+ WatchList</button>
+                            </div>
+                        </div> <?php
+                    }
+                    $index++; ?>
+                </div> <?php
+                } ?>
 
-        //$titre = str_split($imgLink,strpos($imgLink,"."))[0];
-
-        ?>
-
-    </div>
-    <?php
-    }
-    ?>
-
+            </div>
+            <a class="carousel-control-prev" href="#carouselFavori2" role="button" data-bs-slide="prev">
+                <span class="icon carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselFavori2" role="button" data-bs-slide="next">
+                <span class="icone carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
 </div>
-<a class="carousel-control-prev" href="#carouselFavori" role="button" data-bs-slide="prev">
-    <span class="icon carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-</a>
-<a class="carousel-control-next" href="#carouselFavori" role="button" data-bs-slide="next">
-    <span class="icone carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-</a>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <div id="resetH1">
         <div id="separationJaune"></div>
@@ -190,6 +208,8 @@ $data = json_decode(file_get_contents("./json/film.json"),true);
 
     <?php include "./parts/footer.php" ?>
     <script src="./js/randomProfil.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
 </body>
 </html>

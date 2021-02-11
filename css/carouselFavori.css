@@ -8,8 +8,56 @@ html {
     font-size: 62.5%;
 }
 
-#carouselFavori{
-    width:50vw;
+#carouselFavori1, #carouselFavori2{
+    width:60vw;
+    height: 42vh;
     margin-left: 15vh;
     margin-top: 2vh;
+}
+
+
+.carousel-item .cont{
+    width: 10vw;
+    height: 40vh;
+    display: inline-block;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    background-color: #2C3E50;
+}
+
+#carouselFavori1 img, #carouselFavori2 img {
+    width:10vw;
+    height: 16vw;
+}
+
+.etoile{
+    color:yellow;
+}
+
+
+#carouselFavori1 .titre, #carouselFavori2 .titre{
+    color: white
+}
+
+#carouselFavori1 #descript, #carouselFavori2 #descript{
+    margin-left: 1vw;
+}
+
+#carouselFavori1 .carousel-control-next-icon, #carouselFavori2 .carousel-control-next-icon{
+    margin-left: -5vw;
+}
+
+.note{
+    margin-left: 1vw;
+}
+
+.addWatchList{
+    font-size: 0.5rem;
+}
+
+.center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
