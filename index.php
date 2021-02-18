@@ -17,9 +17,6 @@
 
     <h1>Featured Today</h1>
 
-
-
-
     <div id="carouselFeature" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <?php
@@ -57,10 +54,7 @@
             </a>
         </div>
 
-
-
-
-        <h1>What to watch</h1>
+    <h1>What to watch</h1>
     <a id="recommendation" href="#">Get more recommendations</a>
 
     <div id="resetH1">
@@ -235,6 +229,54 @@
 
     <h1>Explore what’s streaming</h1>
 
+    <div id="barreJauneBas">
+        <span>Prime video</span>
+        <div></div>
+        <span>Included with prime</span>
+    </div>
+
+        <div class="center">
+            <div id="carouselFavori3" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <?php
+                    $file = scandir("./img/imgFavori");
+                    $file = array_diff($file, array('..', '.'));
+                    $index = 0;
+                    for ($i = 0;$i <=12;$i += 3){
+                    if ($index === 0){ ?>
+                    <div class="carousel-item active"> <?php
+                        }
+                        else{ ?>
+                        <div class="carousel-item"> <?php
+                            }
+
+                            for ($j = 0; $j <= 3; $j++) { ?>
+                                <div class="cont">
+                                    <img src="https://m.media-amazon.com/images/M/MV5BM2EwMmRhMmUtMzBmMS00ZDQ3LTg4OGEtNjlkODk3ZTMxMmJlXkEyXkFqcGdeQXVyMjM5ODk1NDU@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="">
+                                    <div id="descript">
+                                        <span class="etoile"><i class="fas fa-star"></i><span class="note"><?php echo random_int(0,9) + (random_int(0,9)/10) ?></span></span>
+                                        <br>
+                                        <span class="titre">Le jeu de la dame</span>
+                                        <button type="button" class="btn btn-info addWatchList">+ WatchList</button>
+                                    </div>
+                                </div> <?php
+                            }
+                            $index++; ?>
+                        </div> <?php
+                        } ?>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselFavori3" role="button" data-bs-slide="prev">
+                        <span class="icon carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselFavori3" role="button" data-bs-slide="next">
+                        <span class="icone carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+
     <h1>Explore Movies & TV shows</h1>
 
     <div id="resetH1">
@@ -243,6 +285,17 @@
         <a href="#"><i class="fas fa-chevron-right"></i></a>
     </div>
     <span>Weekend of February 5-7</span>
+
+    <div id="topBoxOffice">
+        <div id="contBoxOffice">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+    </div>
 
     <div id="resetH1">
         <div id="separationJaune"></div>

@@ -8,7 +8,7 @@ html {
     font-size: 62.5%;
 }
 
-#carouselFavori1, #carouselFavori2 , #carousel3, #carouselFeature{
+#carouselFavori1, #carouselFavori2, #carouselFavori3 , #carousel3, #carouselFeature{
     width:60vw;
     height: 42vh;
     margin-left: 15vh;
@@ -17,7 +17,7 @@ html {
 }
 
 
-#carouselFavori1 .carousel-item .cont, #carouselFavori2 .carousel-item .cont{
+#carouselFavori1 .carousel-item .cont, #carouselFavori2 .carousel-item .cont, #carouselFavori3 .carousel-item .cont{
     width: 10vw;
     height: 40vh;
     display: inline-block;
@@ -26,7 +26,7 @@ html {
     background-color: #2C3E50;
 }
 
-#carouselFavori1 img, #carouselFavori2 img {
+#carouselFavori1 img, #carouselFavori2 img, #carouselFavori3 img {
     width:10vw;
     height: 16vw;
 }
@@ -36,16 +36,16 @@ html {
 }
 
 
-#carouselFavori1 .titre, #carouselFavori2 .titre{
+#carouselFavori1 .titre, #carouselFavori2 .titre, #carouselFavori3 .titre{
     color: white
 }
 
-#carouselFavori1 #descript, #carouselFavori2 #descript{
+#carouselFavori1 #descript, #carouselFavori2 #descript, #carouselFavori3 #descript{
     margin-left: 1vw;
     margin-top: 0.5vw;
 }
 
-#carouselFavori1 .carousel-control-next-icon, #carouselFavori2 .carousel-control-next-icon{
+#carouselFavori1 .carousel-control-next-icon, #carouselFavori2 .carousel-control-next-icon, #carouselFavori3 .carousel-control-next-icon{
     margin-left: -5vw;
 }
 
